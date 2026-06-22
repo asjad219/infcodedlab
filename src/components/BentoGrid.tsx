@@ -36,7 +36,7 @@ export default function BentoGrid() {
   };
 
   return (
-    <section id="features" className="relative bg-[#060913] py-32 z-10">
+    <section id="features" className="relative bg-[#060913] py-32 z-10 overflow-hidden">
       
       {/* Background radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-brand-indigo/5 blur-[150px] pointer-events-none" />
@@ -183,7 +183,7 @@ export default function BentoGrid() {
               </p>
             </div>
 
-            <div className="mt-6 flex items-center justify-between bg-white/5 border border-white/5 p-3.5 rounded-lg max-w-sm">
+            <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-white/5 border border-white/5 p-3.5 rounded-lg max-w-sm">
               <div className="flex items-center gap-2 text-xs text-white font-bold">
                 <CheckCircle2 size={15} className="text-brand-emerald animate-pulse" />
                 <span>Invoice #FS-2026-9043</span>

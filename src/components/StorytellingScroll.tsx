@@ -63,7 +63,7 @@ export default function StorytellingScroll() {
   }, [activeStep]);
 
   return (
-    <section id="story" ref={containerRef} className="relative bg-[#060913] min-h-[300vh] py-24 z-10">
+    <section id="story" ref={containerRef} className="relative bg-[#060913] min-h-[300vh] py-24 z-10 overflow-x-clip">
       
       <div className="mx-auto max-w-7xl px-6 md:px-12 flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 relative">
         

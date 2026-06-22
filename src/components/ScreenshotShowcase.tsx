@@ -191,7 +191,7 @@ export default function ScreenshotShowcase() {
                      </div>
 
                      {/* Table */}
-                     <div className="flex-1 bg-black/40 border border-white/10 rounded-xl p-2 md:p-4 overflow-hidden flex flex-col gap-1 md:gap-2 shadow-2xl relative z-10">
+                     <div className="flex-1 bg-black/40 border border-white/10 rounded-xl p-2 md:p-4 overflow-x-auto overflow-y-hidden flex flex-col gap-1 md:gap-2 shadow-2xl relative z-10">
                         <div className="grid grid-cols-3 md:grid-cols-5 text-[7px] md:text-[10px] text-slate-500 font-bold uppercase tracking-wider pb-1 md:pb-2 border-b border-white/10 px-1 md:px-2">
                            <span className="col-span-1 md:col-span-2">Student Profile</span>
                            <span>Batch Group</span>

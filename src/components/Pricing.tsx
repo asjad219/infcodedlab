@@ -89,7 +89,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="relative bg-[#060913] py-24 md:py-32 z-10">
+    <section id="pricing" className="relative bg-[#060913] py-24 md:py-32 z-10 overflow-hidden">
       
       {/* Ambient background blur */}
       <div className="absolute bottom-12 right-0 w-[400px] h-[400px] rounded-full bg-brand-indigo/5 blur-[120px] pointer-events-none" />

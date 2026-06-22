@@ -81,7 +81,7 @@ export default function Testimonials() {
             {marqueeCards.map((card, idx) => (
               <div
                 key={idx}
-                className="w-[300px] md:w-[380px] shrink-0 glass-panel p-8 rounded-2xl hover:border-brand-indigo/40 hover:-translate-y-2 hover:shadow-[0_12px_40px_-15px_rgba(99,102,241,0.3)] transition-all duration-300 flex flex-col justify-between text-left group select-none cursor-grab active:cursor-grabbing whitespace-normal"
+                className="w-[85vw] max-w-[300px] md:max-w-none md:w-[380px] shrink-0 glass-panel p-8 rounded-2xl hover:border-brand-indigo/40 hover:-translate-y-2 hover:shadow-[0_12px_40px_-15px_rgba(99,102,241,0.3)] transition-all duration-300 flex flex-col justify-between text-left group select-none cursor-grab active:cursor-grabbing whitespace-normal"
               >
                 <div>
                   {/* Rating Stars */}

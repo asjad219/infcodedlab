@@ -36,7 +36,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="relative bg-[#070914] py-32 z-10">
+    <section id="faq" className="relative bg-[#070914] py-32 z-10 overflow-hidden">
       
       {/* Background radial glow */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[350px] h-[350px] rounded-full bg-brand-cyan/5 blur-[100px] pointer-events-none" />

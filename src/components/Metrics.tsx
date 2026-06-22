@@ -49,7 +49,7 @@ export default function Metrics() {
   };
 
   return (
-    <section id="metrics" className="relative bg-[#070914] py-32 z-10">
+    <section id="metrics" className="relative bg-[#070914] py-32 z-10 overflow-hidden">
       
       {/* Background glow lines */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] rounded-full bg-brand-cyan/5 blur-[120px] pointer-events-none" />
