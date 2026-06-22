@@ -259,7 +259,7 @@ export default function StorytellingScroll() {
                     className="space-y-5"
                   >
                     {/* Count Up Metrics */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="rounded-lg border border-white/5 bg-white/5 p-3 text-left">
                         <span className="block text-[9px] text-slate-500 uppercase font-bold tracking-wider">REVENUE REC.</span>
                         <span className="block text-sm font-bold text-white mt-1">

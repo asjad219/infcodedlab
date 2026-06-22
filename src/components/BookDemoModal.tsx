@@ -67,7 +67,7 @@ export default function BookDemoModal({ isOpen, onClose }: BookDemoModalProps) {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-[99990] flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-[99990] flex items-center justify-center p-3 sm:p-4">
           {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -83,7 +83,7 @@ export default function BookDemoModal({ isOpen, onClose }: BookDemoModalProps) {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 350 }}
-            className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-white/10 bg-[#0B0F19]/90 p-8 shadow-2xl glass-panel z-10"
+            className="relative w-full max-w-lg max-h-[95vh] overflow-y-auto rounded-2xl border border-white/10 bg-[#0B0F19]/90 p-5 md:p-8 shadow-2xl glass-panel z-10"
           >
             {/* Close Button */}
             <button
@@ -161,7 +161,7 @@ export default function BookDemoModal({ isOpen, onClose }: BookDemoModalProps) {
                   </div>
 
                   {/* Categories */}
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
                         Category

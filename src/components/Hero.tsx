@@ -123,7 +123,7 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            className="absolute z-20 w-[78%] md:w-[70%] aspect-[16/10] bg-[#0E1325] border-4 border-slate-700 rounded-xl md:rounded-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden"
+            className="absolute z-20 w-[90%] sm:w-[85%] md:w-[70%] aspect-[16/10] bg-[#0E1325] border-[3px] md:border-4 border-slate-700 rounded-xl md:rounded-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden"
           >
             {/* Tablet Content */}
             <div className="w-full h-full relative group">
@@ -240,7 +240,7 @@ export default function Hero() {
               ease: "easeInOut",
               delay: 0.3
             }}
-            className="absolute left-1 md:left-6 bottom-4 md:bottom-12 z-30 w-[26%] md:w-[18%] aspect-[9/19] bg-[#090D1A] border-[3px] md:border-4 border-slate-600 rounded-[1.5rem] md:rounded-[2.2rem] shadow-[0_0_40px_-5px_rgba(99,102,241,0.5)] overflow-hidden ring-1 ring-brand-indigo/40"
+            className="absolute left-1 md:left-6 bottom-4 md:bottom-12 z-30 w-[28%] sm:w-[22%] md:w-[18%] aspect-[9/19] bg-[#090D1A] border-[3px] md:border-4 border-slate-600 rounded-[1.5rem] md:rounded-[2.2rem] shadow-[0_0_40px_-5px_rgba(99,102,241,0.5)] overflow-hidden ring-1 ring-brand-indigo/40"
           >
             {/* Dynamic Island */}
             <div className="absolute top-2.5 md:top-3 left-1/2 -translate-x-1/2 w-[55px] h-3.5 md:w-20 md:h-5 bg-black rounded-full z-40 flex items-center justify-between px-1.5 md:px-2 shadow-sm border border-white/5">
@@ -272,7 +272,7 @@ export default function Hero() {
               ease: "easeInOut",
               delay: 0.6
             }}
-            className="flex absolute right-0 md:right-8 top-12 md:top-20 z-30 w-[30%] md:w-[20%] aspect-[4/3] glass-panel border border-white/10 rounded-xl p-2 md:p-4 shadow-[0_20px_40px_-8px_rgba(99,102,241,0.25)] flex-col justify-between overflow-hidden"
+            className="flex absolute right-0 md:right-8 top-12 md:top-20 z-30 w-[35%] sm:w-[25%] md:w-[20%] aspect-[4/3] glass-panel border border-white/10 rounded-xl p-2 md:p-4 shadow-[0_20px_40px_-8px_rgba(99,102,241,0.25)] flex-col justify-between overflow-hidden"
           >
             <div className="flex items-center gap-1.5 md:gap-3">
               <div className="h-5 w-5 md:h-7 md:w-7 rounded-md bg-brand-emerald/10 flex items-center justify-center text-brand-emerald">
