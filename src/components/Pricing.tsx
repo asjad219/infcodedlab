@@ -90,12 +90,12 @@ export default function Pricing() {
 
   return (
     <section id="pricing" className="relative bg-[#060913] py-24 md:py-32 z-10 overflow-hidden">
-      
+
       {/* Ambient background blur */}
       <div className="absolute bottom-12 right-0 w-[400px] h-[400px] rounded-full bg-brand-indigo/5 blur-[120px] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-4 md:px-8 relative z-10 text-center">
-        
+
         {/* Header */}
         <div className="max-w-3xl mx-auto mb-12">
           <h2 className="text-xs font-bold uppercase tracking-widest text-brand-indigo mb-3">
@@ -140,11 +140,10 @@ export default function Pricing() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative rounded-2xl glass-panel p-6 flex flex-col justify-between transition-all duration-300 group hover:-translate-y-2 select-none cursor-pointer ${
-                plan.recommended
+              className={`relative rounded-2xl glass-panel p-6 flex flex-col justify-between transition-all duration-300 group hover:-translate-y-2 select-none cursor-pointer ${plan.recommended
                   ? "border border-brand-indigo bg-[#0a0f24] shadow-[0_15px_45px_-12px_rgba(99,102,241,0.25)]"
                   : "hover:border-white/20 hover:shadow-2xl"
-              }`}
+                }`}
             >
               {/* Highlight ribbon */}
               {plan.recommended && (
@@ -199,11 +198,10 @@ export default function Pricing() {
               {/* Action Trigger */}
               <button
                 onClick={openModal}
-                className={`magnetic w-full py-3 px-4 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 group ${
-                  plan.recommended
+                className={`magnetic w-full py-3 px-4 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 group ${plan.recommended
                     ? "bg-brand-indigo text-white shadow-lg shadow-brand-indigo/25 hover:bg-brand-indigo/90"
                     : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
-                }`}
+                  }`}
               >
                 {plan.cta}
                 <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
@@ -214,25 +212,25 @@ export default function Pricing() {
         </div>
 
         {/* Refer & Earn Banner */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mt-12 md:mt-16 bg-gradient-to-br from-[#1a140d] to-[#0A0D1A] border border-orange-500/20 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 relative overflow-hidden group hover:border-orange-500/40 transition-colors w-full max-w-4xl mx-auto"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 blur-[80px] pointer-events-none" />
-          
+
           <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-orange-400/20 to-yellow-500/20 flex items-center justify-center shrink-0 border border-orange-500/20">
             <Gift size={24} className="text-orange-400 group-hover:scale-110 transition-transform md:w-8 md:h-8" />
           </div>
-          
+
           <div className="flex-1 text-center md:text-left z-10">
             <h4 className="text-white font-bold text-base md:text-lg mb-1 md:mb-2">Refer & Earn</h4>
             <p className="text-slate-400 text-xs md:text-sm leading-relaxed max-w-xl mx-auto md:mx-0">
               Invite other coaching centers to FeeSync and both of you get <strong className="text-orange-400">₹100 off your next month</strong>.
             </p>
           </div>
-          
+
           <button onClick={openModal} className="shrink-0 bg-white/5 hover:bg-white/10 text-white font-bold text-xs md:text-sm px-4 py-2 md:px-6 md:py-3 rounded-xl border border-white/10 transition-colors z-10">
             Share Invite Link
           </button>
