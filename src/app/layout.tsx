@@ -33,6 +33,11 @@ export const metadata: Metadata = {
         alt: "FeeSync dashboard showing automated tuition fee installment tracker",
       }
     ]
+  },
+  icons: {
+    icon: '/icon.png?v=2',
+    shortcut: '/icon.png?v=2',
+    apple: '/icon.png?v=2',
   }
 };
 
