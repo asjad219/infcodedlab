@@ -5,8 +5,8 @@ import CustomCursor from "@/components/CustomCursor";
 import { DemoModalProvider } from "@/context/DemoModalContext";
 
 export const metadata: Metadata = {
-  title: "FeeSync | Premium Fee Management Software for Coaching Institutes & Academies",
-  description: "Automate student fee tracking, send automated WhatsApp + SMS reminders, generate instant PDF receipts, and scale revenue. Professional platform by InfCoded Lab.",
+  title: "Coaching Fee Management App | Automate Reminders & Collections | FeeSync",
+  description: "Stop chasing unpaid student fees manually. FeeSync automates tuition fee tracking, sends automated WhatsApp/SMS due alerts, handles installments, and collects secure online payments.",
   keywords: [
     "FeeSync",
     "InfCoded Lab",
@@ -15,14 +15,24 @@ export const metadata: Metadata = {
     "Tuition Centre App",
     "NEET JEE coaching tracker",
     "Automated fee reminders",
-    "WhatsApp fee reminders India"
+    "WhatsApp fee reminders India",
+    "Coaching Fee Management App",
+    "Student fee tracking software"
   ],
   authors: [{ name: "InfCoded Lab", url: "https://infcoded.com" }],
   openGraph: {
-    title: "Stop Chasing Fees. Start Growing Your Institute | FeeSync",
-    description: "Automate reminders, track revenue, and simplify operations. The ultimate fee collection suite for tuition centres and academies.",
+    title: "Coaching Fee Management App | Automate Reminders & Collections | FeeSync",
+    description: "Stop chasing unpaid student fees manually. FeeSync automates tuition fee tracking, sends automated WhatsApp/SMS due alerts, handles installments, and collects secure online payments.",
     type: "website",
     locale: "en_IN",
+    images: [
+      {
+        url: "https://feesync.in/dashbord.png",
+        width: 1200,
+        height: 630,
+        alt: "FeeSync dashboard showing automated tuition fee installment tracker",
+      }
+    ]
   }
 };
 

@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Calendar, CheckCircle2, ChevronRight, MessageSquare, GraduationCap, Users } from "lucide-react";
+import { db } from "@/lib/firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 interface BookDemoModalProps {
   isOpen: boolean;
@@ -21,16 +23,32 @@ export default function BookDemoModal({ isOpen, onClose }: BookDemoModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formState.instituteName || !formState.ownerName || !formState.whatsapp) return;
     
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      // 1. Save to Firebase Firestore
+      await addDoc(collection(db, "demoRequests"), {
+        ...formState,
+        createdAt: serverTimestamp(),
+      });
+
+      // 2. Send Email Notification
+      await fetch("/api/send-demo-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
+      });
+
       setIsSuccess(true);
-    }, 1200);
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleReset = () => {

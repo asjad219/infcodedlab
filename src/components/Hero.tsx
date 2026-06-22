@@ -62,9 +62,9 @@ export default function Hero() {
           transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
           className="max-w-4xl text-fluid-3xl font-extrabold font-clash tracking-tight text-white mb-6 leading-[1.05]"
         >
-          Stop Chasing Fees.<br />
+          Automated Fee Management App<br />
           <span className="bg-gradient-to-r from-brand-indigo via-brand-cyan to-brand-emerald bg-clip-text text-transparent">
-            Start Growing Your Institute.
+            for Coaching Institutes & Tutors
           </span>
         </motion.h1>
 
@@ -252,7 +252,7 @@ export default function Hero() {
             <div className="w-full h-full relative bg-[#070A15]">
               <Image
                 src="/dashbord.png"
-                alt="FeeSync Dashboard Mobile App Screenshot"
+                alt="FeeSync dashboard showing automated tuition fee installment tracker"
                 fill
                 sizes="(max-width: 1024px) 25vw, 20vw"
                 className="object-cover object-top"
@@ -287,7 +287,7 @@ export default function Hero() {
             <div className="relative h-12 md:h-20 w-full overflow-hidden rounded-md bg-white/5 mt-1.5 md:mt-2">
               <Image
                 src="/biomertic.png"
-                alt="FeeSync Biometric Integration Screen"
+                alt="FeeSync biometric attendance integration for coaching institutes"
                 fill
                 sizes="(max-width: 1024px) 25vw, 20vw"
                 className="object-cover"

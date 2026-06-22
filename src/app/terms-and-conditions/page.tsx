@@ -14,7 +14,7 @@ export default function TermsConditions() {
           <ArrowLeft size={16} />
           Back to Home
         </Link>
-        
+
         <h1 className="font-clash text-4xl md:text-5xl font-bold text-white mb-4">Terms & Conditions</h1>
         <p className="text-sm text-slate-500 mb-12">Last Updated: June 12, 2026</p>
 
@@ -70,9 +70,9 @@ export default function TermsConditions() {
           <section>
             <h2 className="text-xl font-bold text-white mb-3">7. Contact Us</h2>
             <p className="leading-relaxed text-sm md:text-base">
-              For any questions regarding these Terms, please contact us at:<br/>
-              <strong>Email:</strong> artexplore764@gmail.com<br/>
-              <strong>Phone:</strong> +91 70991 76394<br/>
+              For any questions regarding these Terms, please contact us at:<br />
+              <strong>Email:</strong> artexplore764@gmail.com<br />
+              <strong>Phone:</strong> +91 70991 76394<br />
               <strong>Address:</strong> InfCoded Lab, Kalain, Cachar, Assam, India.
             </p>
           </section>

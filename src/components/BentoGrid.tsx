@@ -45,12 +45,12 @@ export default function BentoGrid() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-brand-cyan mb-3">
+          <span className="block text-xs font-bold uppercase tracking-widest text-brand-cyan mb-3">
             System Infrastructure
+          </span>
+          <h2 className="font-clash text-3xl md:text-4xl font-extrabold text-white leading-tight">
+            Why Tutors Choose Our Student Fee Tracking Software
           </h2>
-          <h3 className="font-clash text-3xl md:text-4xl font-extrabold text-white leading-tight">
-            An Elite Toolkit Designed to Optimize Academy Admin
-          </h3>
           <p className="mt-4 text-slate-400 text-sm md:text-base leading-relaxed">
             Eliminate operational leakages. FeeSync bundles everything you need to manage batches, secure online funds, track collections, and verify student records.
           </p>
@@ -82,7 +82,7 @@ export default function BentoGrid() {
             </div>
 
             <div className="mt-8 space-y-3">
-              <h4 className="font-syne text-xl font-bold text-white">Automated Fee Reminders</h4>
+              <h3 className="font-syne text-xl font-bold text-white">Automated Fee Reminders via WhatsApp and SMS</h3>
               <p className="text-slate-400 text-sm max-w-md leading-relaxed">
                 Dispatch personalized reminders with direct checkout links. Parents receive updates on WhatsApp, ensuring payments are cleared without manual intervention.
               </p>
@@ -116,7 +116,7 @@ export default function BentoGrid() {
             </div>
 
             <div className="mt-8 space-y-2">
-              <h4 className="font-syne text-xl font-bold text-white">UPI & Online Payments</h4>
+              <h3 className="font-syne text-xl font-bold text-white">Student Fee Collection with Local UPI & Net Banking Integration</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Accept payments via UPI, Credit/Debit cards, Net Banking, and Wallet integrations. Settlements happen directly into your primary account.
               </p>
@@ -145,7 +145,7 @@ export default function BentoGrid() {
             </div>
 
             <div className="mt-8 space-y-2">
-              <h4 className="font-syne text-xl font-bold text-white">Analytics Dashboard</h4>
+              <h3 className="font-syne text-xl font-bold text-white">Coaching Institute Fee Defaulter Tracker</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Analyze collection rates, check pending arrears, forecast monthly revenue trajectories, and download comprehensive ledger exports.
               </p>
@@ -177,7 +177,7 @@ export default function BentoGrid() {
             </div>
 
             <div className="mt-8 space-y-3">
-              <h4 className="font-syne text-xl font-bold text-white">Instant PDF Receipts</h4>
+              <h3 className="font-syne text-xl font-bold text-white">Automated PDF Fee Receipt Generator</h3>
               <p className="text-slate-400 text-sm max-w-md leading-relaxed">
                 As soon as a fee is recorded or cleared online, the engine builds a GST-compliant PDF receipt. It is instantly archived and forwarded to the parent via WhatsApp or Email.
               </p>
@@ -203,7 +203,7 @@ export default function BentoGrid() {
               </div>
             </div>
             <div className="mt-8">
-              <h4 className="font-syne text-lg font-bold text-white">Attendance Sync</h4>
+              <h3 className="font-syne text-lg font-bold text-white">Attendance Sync</h3>
               <p className="mt-2 text-slate-400 text-xs leading-relaxed">
                 Link biometric or RFID hardware to FeeSync. Trigger automated SMS/WhatsApp gate checks when students enter the premises.
               </p>
@@ -221,7 +221,7 @@ export default function BentoGrid() {
               </div>
             </div>
             <div className="mt-8">
-              <h4 className="font-syne text-lg font-bold text-white">Batch & Cohort Manager</h4>
+              <h3 className="font-syne text-lg font-bold text-white">Batch & Cohort Manager</h3>
               <p className="mt-2 text-slate-400 text-xs leading-relaxed">
                 Organize students into NEET, JEE, Foundation, or academy streams. Configure batch pricing grids and individual billing terms easily.
               </p>
@@ -239,7 +239,7 @@ export default function BentoGrid() {
               </div>
             </div>
             <div className="mt-8">
-              <h4 className="font-syne text-lg font-bold text-white">Staff Roles & Permissions</h4>
+              <h3 className="font-syne text-lg font-bold text-white">Staff Roles & Permissions</h3>
               <p className="mt-2 text-slate-400 text-xs leading-relaxed">
                 Assign specific dashboard access limits. Let your accountant record offline collections while locking payroll files and fee matrices.
               </p>
@@ -257,7 +257,7 @@ export default function BentoGrid() {
               </div>
             </div>
             <div className="mt-8">
-              <h4 className="font-syne text-lg font-bold text-white">Comprehensive Profiles</h4>
+              <h3 className="font-syne text-lg font-bold text-white">Comprehensive Profiles</h3>
               <p className="mt-2 text-slate-400 text-xs leading-relaxed">
                 Maintain 360-degree profiles for parents and students. Review academic histories, payment timelines, attendance ratings, and logs.
               </p>
