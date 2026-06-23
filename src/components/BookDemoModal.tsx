@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Calendar, CheckCircle2, ChevronRight, MessageSquare, GraduationCap, Users } from "lucide-react";
+import { X, Calendar, CheckCircle2, ChevronRight, MessageSquare, GraduationCap, Users, Mail } from "lucide-react";
 import { db } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
@@ -16,6 +16,7 @@ export default function BookDemoModal({ isOpen, onClose }: BookDemoModalProps) {
     instituteName: "",
     ownerName: "",
     whatsapp: "",
+    email: "",
     category: "Coaching",
     students: "50-100",
     notes: "",
@@ -25,7 +26,7 @@ export default function BookDemoModal({ isOpen, onClose }: BookDemoModalProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formState.instituteName || !formState.ownerName || !formState.whatsapp) return;
+    if (!formState.instituteName || !formState.ownerName || !formState.whatsapp || !formState.email) return;
     
     setIsSubmitting(true);
     try {
@@ -58,6 +59,7 @@ export default function BookDemoModal({ isOpen, onClose }: BookDemoModalProps) {
       instituteName: "",
       ownerName: "",
       whatsapp: "",
+      email: "",
       category: "Coaching",
       students: "50-100",
       notes: "",
@@ -162,6 +164,24 @@ export default function BookDemoModal({ isOpen, onClose }: BookDemoModalProps) {
                     </div>
                   </div>
 
+                  {/* Email Address */}
+                  <div className="relative">
+                    <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                      Email Address
+                    </label>
+                    <div className="flex items-center">
+                      <Mail className="absolute left-3 text-slate-500" size={16} />
+                      <input
+                        type="email"
+                        required
+                        placeholder="e.g. name@institute.com"
+                        value={formState.email}
+                        onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+                        className="w-full rounded-lg border border-white/5 bg-white/5 py-2.5 pl-10 pr-4 text-sm text-white placeholder-slate-500 focus:border-brand-indigo focus:bg-white/10 focus:ring-1 focus:ring-brand-indigo outline-none transition-all"
+                      />
+                    </div>
+                  </div>
+
                   {/* Categories */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
@@ -248,7 +268,7 @@ export default function BookDemoModal({ isOpen, onClose }: BookDemoModalProps) {
                 <div>
                   <h3 className="text-2xl font-bold font-syne text-white">Demo Scheduled!</h3>
                   <p className="mt-3 text-sm text-slate-300 px-4 leading-relaxed">
-                    Thank you! We will reach out to you on WhatsApp at <strong className="text-brand-cyan">{formState.whatsapp}</strong> within the next 2 hours to confirm your screen sharing session.
+                    Thank you! We will reach out to you on WhatsApp at <strong className="text-brand-cyan">{formState.whatsapp}</strong> within the next 24 hours to confirm your screen sharing session.
                   </p>
                 </div>
 

@@ -10,10 +10,10 @@ const EMAIL_PASS = process.env.EMAIL_PASS || "jihe sqwv meea jela";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { instituteName, ownerName, whatsapp, category, students, notes } = body;
+    const { instituteName, ownerName, whatsapp, email, category, students, notes } = body;
 
     // Validate request body
-    if (!instituteName || !ownerName || !whatsapp) {
+    if (!instituteName || !ownerName || !whatsapp || !email) {
       return NextResponse.json(
         { success: false, error: "Missing required fields" },
         { status: 400 }
@@ -65,6 +65,10 @@ export async function POST(request: Request) {
             <div class="detail-row">
               <span class="label">WhatsApp Number</span>
               <p class="value">${whatsapp}</p>
+            </div>
+            <div class="detail-row">
+              <span class="label">Email Address</span>
+              <p class="value">${email}</p>
             </div>
             <div class="detail-row">
               <span class="label">Category</span>
