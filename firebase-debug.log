@@ -1,75 +1,30 @@
-[debug] [2026-06-22T16:06:04.395Z] ----------------------------------------------------------------------
-[debug] [2026-06-22T16:06:04.408Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asjaduzzaman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only firestore:rules
-[debug] [2026-06-22T16:06:04.410Z] CLI Version:   15.12.0
-[debug] [2026-06-22T16:06:04.411Z] Platform:      win32
-[debug] [2026-06-22T16:06:04.412Z] Node Version:  v24.14.0
-[debug] [2026-06-22T16:06:04.413Z] Time:          Mon Jun 22 2026 21:36:04 GMT+0530 (India Standard Time)
-[debug] [2026-06-22T16:06:04.413Z] ----------------------------------------------------------------------
+[debug] [2026-06-23T00:09:47.961Z] ----------------------------------------------------------------------
+[debug] [2026-06-23T00:09:47.969Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asjaduzzaman\AppData\Local\npm-cache\_npx\ba4f1959e38407b5\node_modules\firebase-tools\lib\bin\firebase.js functions:config:get --project infcoded-labs
+[debug] [2026-06-23T00:09:47.969Z] CLI Version:   15.22.1
+[debug] [2026-06-23T00:09:47.970Z] Platform:      win32
+[debug] [2026-06-23T00:09:47.970Z] Node Version:  v24.14.0
+[debug] [2026-06-23T00:09:47.970Z] Detected Agent: antigravity
+[debug] [2026-06-23T00:09:47.971Z] Time:          Tue Jun 23 2026 05:39:47 GMT+0530 (India Standard Time)
+[debug] [2026-06-23T00:09:47.971Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2026-06-22T16:06:11.705Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2026-06-22T16:06:11.706Z] > authorizing via signed-in user (artexplore764@gmail.com)
-[debug] [2026-06-22T16:06:11.707Z] [iam] checking project infcoded-labs for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
-[debug] [2026-06-22T16:06:11.712Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:11.713Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:11.715Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/infcoded-labs:testIamPermissions [none]
-[debug] [2026-06-22T16:06:11.716Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/infcoded-labs:testIamPermissions  x-goog-user-project=infcoded-labs
-[debug] [2026-06-22T16:06:11.716Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/infcoded-labs:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
-[debug] [2026-06-22T16:06:28.451Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/infcoded-labs:testIamPermissions 200
-[debug] [2026-06-22T16:06:28.452Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/infcoded-labs:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
-[info] 
-[info] === Deploying to 'infcoded-labs'...
-[info] 
-[info] i  deploying firestore 
-[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
-[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
-[debug] [2026-06-22T16:06:28.470Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:28.471Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:28.471Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/infcoded-labs/databases/(default) [none]
-[debug] [2026-06-22T16:06:36.057Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/infcoded-labs/databases/(default) 200
-[debug] [2026-06-22T16:06:36.057Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/infcoded-labs/databases/(default) {"name":"projects/infcoded-labs/databases/(default)","uid":"a29a51a6-be9d-4414-860d-04058472251b","createTime":"2026-06-22T16:04:20.415444Z","updateTime":"2026-06-22T16:04:20.415444Z","locationId":"us-central1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2026-06-22T16:04:20.415444Z","appEngineIntegrationMode":"DISABLED","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"realtimeUpdatesMode":"REALTIME_UPDATES_MODE_ENABLED","etag":"IP6pkJ2dm5UDMOqEyd6cm5UD"}
-[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
-[debug] [2026-06-22T16:06:36.060Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:36.060Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:36.061Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs:test [none]
-[debug] [2026-06-22T16:06:36.061Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs:test [omitted]
-[debug] [2026-06-22T16:06:45.495Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs:test 200
-[debug] [2026-06-22T16:06:45.496Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs:test {}
-[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
-[debug] [2026-06-22T16:06:45.500Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:45.500Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:45.502Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/infcoded-labs/releases pageSize=10&pageToken=
-[debug] [2026-06-22T16:06:48.549Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/infcoded-labs/releases 200
-[debug] [2026-06-22T16:06:48.550Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/infcoded-labs/releases {}
-[info] i  firestore: uploading rules firestore.rules... 
-[debug] [2026-06-22T16:06:48.553Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:48.555Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:48.556Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs/rulesets [none]
-[debug] [2026-06-22T16:06:48.556Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs/rulesets [omitted]
-[debug] [2026-06-22T16:06:53.027Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs/rulesets 200
-[debug] [2026-06-22T16:06:53.027Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs/rulesets {"name":"projects/infcoded-labs/rulesets/13827b14-ec91-4a88-b195-e848dbd88ba5","source":{"files":[{"content":"rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    match /demoRequests/{document=**} {\n      allow write: if true;\n      allow read: if false;\n    }\n  }\n}\n","name":"firestore.rules"}]},"createTime":"2026-06-22T16:06:52.610873Z","metadata":{"services":["cloud.firestore"]}}
-[debug] [2026-06-22T16:06:53.027Z] [rules] created ruleset projects/infcoded-labs/rulesets/13827b14-ec91-4a88-b195-e848dbd88ba5
-[debug] [2026-06-22T16:06:53.028Z] [rules] releasing cloud.firestore/(default) with ruleset projects/infcoded-labs/rulesets/13827b14-ec91-4a88-b195-e848dbd88ba5
-[debug] [2026-06-22T16:06:53.029Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:53.029Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:53.029Z] >>> [apiv2][query] PATCH https://firebaserules.googleapis.com/v1/projects/infcoded-labs/releases/cloud.firestore/(default) [none]
-[debug] [2026-06-22T16:06:53.030Z] >>> [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/infcoded-labs/releases/cloud.firestore/(default) {"release":{"name":"projects/infcoded-labs/releases/cloud.firestore/(default)","rulesetName":"projects/infcoded-labs/rulesets/13827b14-ec91-4a88-b195-e848dbd88ba5"}}
-[debug] [2026-06-22T16:06:56.044Z] <<< [apiv2][status] PATCH https://firebaserules.googleapis.com/v1/projects/infcoded-labs/releases/cloud.firestore/(default) 404
-[debug] [2026-06-22T16:06:56.045Z] <<< [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/infcoded-labs/releases/cloud.firestore/(default) {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
-[debug] [2026-06-22T16:06:56.046Z] [rules] ruleset update failed, attempting to create instead
-[debug] [2026-06-22T16:06:56.047Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:56.047Z] Checked if tokens are valid: true, expires at: 1782147518226
-[debug] [2026-06-22T16:06:56.047Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs/releases [none]
-[debug] [2026-06-22T16:06:56.047Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs/releases {"name":"projects/infcoded-labs/releases/cloud.firestore/(default)","rulesetName":"projects/infcoded-labs/rulesets/13827b14-ec91-4a88-b195-e848dbd88ba5"}
-[debug] [2026-06-22T16:06:59.171Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs/releases 200
-[debug] [2026-06-22T16:06:59.171Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/infcoded-labs/releases {"name":"projects/infcoded-labs/releases/cloud.firestore","rulesetName":"projects/infcoded-labs/rulesets/13827b14-ec91-4a88-b195-e848dbd88ba5","createTime":"2026-06-22T16:06:58.738324Z","updateTime":"2026-06-22T16:06:58.738324Z"}
-[debug] [2026-06-22T16:06:59.171Z] [rules] created release projects/infcoded-labs/releases/cloud.firestore
-[info] +  firestore: released rules firestore.rules to cloud.firestore 
-[info] 
-[info] +  Deploy complete! 
-[info] 
-[info] Project Console: https://console.firebase.google.com/project/infcoded-labs/overview
-[debug] [2026-06-22T16:07:09.231Z] Error: Timed out.
-    at Timeout._onTimeout (C:\Users\Asjaduzzaman\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:309:49)
+[debug] [2026-06-23T00:09:48.497Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-06-23T00:09:48.497Z] > authorizing via signed-in user (artexplore764@gmail.com)
+[debug] [2026-06-23T00:09:48.498Z] [iam] checking project infcoded-labs for permissions ["firebase.projects.get","runtimeconfig.configs.get","runtimeconfig.configs.list","runtimeconfig.variables.get","runtimeconfig.variables.list"]
+[debug] [2026-06-23T00:09:48.502Z] Checked if tokens are valid: true, expires at: 1782175124691
+[debug] [2026-06-23T00:09:48.503Z] Checked if tokens are valid: true, expires at: 1782175124691
+[debug] [2026-06-23T00:09:48.505Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/infcoded-labs:testIamPermissions [none]
+[debug] [2026-06-23T00:09:48.505Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/infcoded-labs:testIamPermissions  x-goog-user-project=infcoded-labs
+[debug] [2026-06-23T00:09:48.505Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/infcoded-labs:testIamPermissions {"permissions":["firebase.projects.get","runtimeconfig.configs.get","runtimeconfig.configs.list","runtimeconfig.variables.get","runtimeconfig.variables.list"]}
+[debug] [2026-06-23T00:09:50.153Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/infcoded-labs:testIamPermissions 200
+[debug] [2026-06-23T00:09:50.153Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/infcoded-labs:testIamPermissions {"permissions":["firebase.projects.get","runtimeconfig.configs.get","runtimeconfig.configs.list","runtimeconfig.variables.get","runtimeconfig.variables.list"]}
+[debug] [2026-06-23T00:09:50.157Z] Checked if tokens are valid: true, expires at: 1782175124691
+[debug] [2026-06-23T00:09:50.157Z] Checked if tokens are valid: true, expires at: 1782175124691
+[debug] [2026-06-23T00:09:50.158Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/infcoded-labs/configs [none]
+[debug] [2026-06-23T00:09:51.715Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/infcoded-labs/configs 200
+[debug] [2026-06-23T00:09:51.715Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/infcoded-labs/configs {}
+[info] {}
+[debug] [2026-06-23T00:09:59.775Z] Error: Timed out.
+    at Timeout.<anonymous> (C:\Users\Asjaduzzaman\AppData\Local\npm-cache\_npx\ba4f1959e38407b5\node_modules\firebase-tools\lib\utils.js:313:49)
     at listOnTimeout (node:internal/timers:605:17)
     at process.processTimers (node:internal/timers:541:7)
 [error] 

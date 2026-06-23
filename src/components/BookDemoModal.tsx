@@ -29,26 +29,20 @@ export default function BookDemoModal({ isOpen, onClose }: BookDemoModalProps) {
     
     setIsSubmitting(true);
     try {
-      // 1. Send email via server-side API endpoint using Nodemailer
-      const response = await fetch("/api/send-email", {
+      // 1. Save to Firebase Firestore (primary action — must succeed)
+      await addDoc(collection(db, "demoRequests"), {
+        ...formState,
+        createdAt: serverTimestamp(),
+      });
+
+      // 2. Send email via server-side API endpoint (non-blocking, best-effort)
+      fetch("/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formState),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.error || "Failed to send email");
-      }
-
-      // 2. Save to Firebase Firestore (non-blocking)
-      // We don't await this so the UI doesn't hang if Firestore is not initialized
-      addDoc(collection(db, "demoRequests"), {
-        ...formState,
-        createdAt: serverTimestamp(),
-      }).catch((e) => console.warn("Firestore save failed:", e));
+      }).catch((e) => console.warn("Email notification failed (non-critical):", e));
 
       setIsSuccess(true);
     } catch (error) {

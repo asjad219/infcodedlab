@@ -14,12 +14,24 @@ export async function POST(request: Request) {
       );
     }
 
-    // Configure the SMTP transporter using details from .env.local
+    // Check for required email credentials
+    const emailUser = process.env.EMAIL_USER;
+    const emailPass = process.env.EMAIL_PASS;
+
+    if (!emailUser || !emailPass) {
+      console.error("EMAIL_USER or EMAIL_PASS environment variables are not set at runtime.");
+      return NextResponse.json(
+        { success: false, error: "Email service not configured on server." },
+        { status: 500 }
+      );
+    }
+
+    // Configure the SMTP transporter using details from environment variables
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: emailUser,
+        pass: emailPass,
       },
     });
 
@@ -85,7 +97,7 @@ export async function POST(request: Request) {
     `;
 
     const mailOptions = {
-      from: `"FeeSync Notifications" <${process.env.EMAIL_USER}>`,
+      from: `"FeeSync Notifications" <${emailUser}>`,
       to: "artexplore764@gmail.com",
       subject: `🔥 New Demo Request: ${instituteName}`,
       html: htmlContent,
