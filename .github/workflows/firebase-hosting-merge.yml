@@ -25,27 +25,3 @@ jobs:
           FIREBASE_CLI_EXPERIMENTS: webframeworks
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-          DEBUG: "firebase:*"
-
-      # Firebase webframeworks deploys Next.js as a Cloud Run Gen2 function named
-      # "ssrinfcodedlabs". The env vars above only apply at build time.
-      # We must patch the Cloud Run service after deployment so the API routes
-      # can access EMAIL_USER and EMAIL_PASS at runtime.
-      - name: Patch Cloud Run service with runtime env vars
-        run: |
-          echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_INFCODED_LABS }}' > /tmp/sa.json
-          gcloud auth activate-service-account --key-file=/tmp/sa.json
-          gcloud config set project infcoded-labs
-
-          REGION="us-central1"
-          # Cloud Run Gen2 (Cloud Functions v2) service name used by Firebase webframeworks
-          SERVICE_NAME="ssrinfcodedlabs"
-
-          echo "Updating Cloud Run service '$SERVICE_NAME' in $REGION with runtime env vars..."
-          gcloud run services update "$SERVICE_NAME" \
-            --region="$REGION" \
-            --platform=managed \
-            --update-env-vars="EMAIL_USER=${{ secrets.EMAIL_USER }},EMAIL_PASS=${{ secrets.EMAIL_PASS }}" \
-            --quiet && echo "✅ Runtime env vars updated on Cloud Run service."
-        env:
-          CLOUDSDK_CORE_DISABLE_PROMPTS: 1
