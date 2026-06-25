@@ -118,7 +118,7 @@ export default function Footer() {
         {/* Bottom Banner */}
         <div className="border-t border-white/5 pt-8 flex flex-col items-center justify-center gap-4 text-xs text-slate-500 text-center">
           <p>
-            © 2026 InfCoded Lab. All rights reserved. FeeSync is a software application developed and published by InfCoded Lab. InfCoded Lab is owned and operated by Asjaduzzaman.
+            © 2026 InfCoded Lab. All rights reserved. FeeSync is a software application developed and published by InfCoded Lab, owned and operated by Asjaduzzaman.
           </p>
         </div>
       </div>
