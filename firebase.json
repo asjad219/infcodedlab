@@ -7,11 +7,7 @@
       "**/node_modules/**"
     ],
     "frameworksBackend": {
-      "region": "us-central1",
-      "environmentVariables": {
-        "EMAIL_USER": "artexplore764@gmail.com",
-        "EMAIL_PASS": "jihe sqwv meea jela"
-      }
+      "region": "us-central1"
     }
   },
   "firestore": {
