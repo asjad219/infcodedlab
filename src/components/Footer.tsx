@@ -100,7 +100,13 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-brand-indigo shrink-0" />
-                <a href="mailto:support@infcoded.com" className="hover:text-white transition-colors">
+                <a href="mailto:zamanasjad4@gmail.com" className="hover:text-white transition-colors">
+                  zamanasjad4@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail size={16} className="text-brand-indigo shrink-0" />
+                <a href="mailto:artexplore764@gmail.com" className="hover:text-white transition-colors">
                   artexplore764@gmail.com
                 </a>
               </li>
