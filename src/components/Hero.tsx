@@ -62,7 +62,7 @@ export default function Hero() {
           transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
           className="max-w-4xl text-fluid-3xl font-extrabold font-clash tracking-tight text-white mb-6 leading-[1.05]"
         >
-          Automated Fee Management App<br />
+          The Complete Fee Management System<br />
           <span className="bg-gradient-to-r from-brand-indigo via-brand-cyan to-brand-emerald bg-clip-text text-transparent">
             for Coaching Institutes & Tutors
           </span>
@@ -75,7 +75,7 @@ export default function Hero() {
           transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.3 }}
           className="max-w-2xl text-fluid-lg text-slate-400 mb-10 leading-relaxed font-sans"
         >
-          Manage student cohorts, secure online fees, automate WhatsApp reminders, and track academy revenue inside one premium, intuitive platform.
+          Stop chasing payments. Automate fee collection, send instant WhatsApp reminders, and manage your student batches effortlessly in one secure platform.
         </motion.p>
 
         {/* Action Buttons */}
@@ -101,7 +101,7 @@ export default function Hero() {
             className="magnetic w-full sm:w-auto flex items-center justify-center gap-2.5 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 px-8 py-4 text-sm font-semibold text-white transition-colors duration-200"
           >
             <Play size={13} className="text-brand-cyan fill-brand-cyan" />
-            See How it Works
+            Watch 60 Second Demo
           </a>
         </motion.div>
 

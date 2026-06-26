@@ -12,16 +12,16 @@ function CountUp({ end, prefix = "", suffix = "", duration = 2 }: { end: number;
 
   useEffect(() => {
     if (!isInView) return;
-    
+
     let startTimestamp: number | null = null;
     const step = (timestamp: number) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / (duration * 1000), 1);
-      
+
       // Ease out quad
       const easeProgress = 1 - (1 - progress) * (1 - progress);
       setCount(Math.floor(easeProgress * end));
-      
+
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
@@ -41,8 +41,8 @@ function CountUp({ end, prefix = "", suffix = "", duration = 2 }: { end: number;
 export default function Metrics() {
   const cardVariants: Variants = {
     hidden: { y: 25, opacity: 0 },
-    visible: { 
-      y: 0, 
+    visible: {
+      y: 0,
       opacity: 1,
       transition: { type: "spring", stiffness: 100, damping: 15 }
     }
@@ -50,13 +50,13 @@ export default function Metrics() {
 
   return (
     <section id="metrics" className="relative bg-[#070914] py-32 z-10 overflow-hidden">
-      
+
       {/* Background glow lines */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] rounded-full bg-brand-cyan/5 blur-[120px] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
+
           {/* Metric 1: Students Managed */}
           <motion.div
             variants={cardVariants}
@@ -68,17 +68,17 @@ export default function Metrics() {
             <div className="h-12 w-12 rounded-xl bg-brand-indigo/10 border border-brand-indigo/20 flex items-center justify-center text-brand-indigo mb-6 group-hover:scale-110 transition-transform duration-300">
               <Users2 size={22} className="magnetic" />
             </div>
-            
-            <h4 className="text-fluid-2xl font-bold tracking-tight text-white mb-2 leading-none">
-              <CountUp end={50000} suffix="+" />
+
+            <h4 className="text-2xl font-bold tracking-tight text-white mb-2 leading-none">
+              Smart Automation
             </h4>
-            
+
             <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">
-              Students Managed
+              Student Management
             </p>
-            
+
             <p className="text-xs text-slate-400 max-w-[200px] leading-relaxed">
-              Enrolled across batches, cohorts, and classes in India.
+              Handle batch enrollments and class rosters without spreadsheets.
             </p>
           </motion.div>
 
@@ -95,16 +95,16 @@ export default function Metrics() {
               <IndianRupee size={20} className="magnetic" />
             </div>
 
-            <h4 className="text-fluid-2xl font-bold tracking-tight text-brand-emerald mb-2 leading-none">
-              <CountUp end={10} prefix="₹" suffix=" Crore+" />
+            <h4 className="text-2xl font-bold tracking-tight text-brand-emerald mb-2 leading-none">
+              Built for Educators
             </h4>
 
             <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">
-              Fees Collected
+              Mission Driven
             </p>
 
             <p className="text-xs text-slate-400 max-w-[200px] leading-relaxed">
-              Processed through offline receipts and secure online links.
+              Solving real operational problems for coaching institutes.
             </p>
           </motion.div>
 
@@ -121,16 +121,16 @@ export default function Metrics() {
               <FileCheck2 size={22} className="magnetic" />
             </div>
 
-            <h4 className="text-fluid-2xl font-bold tracking-tight text-white mb-2 leading-none">
-              <CountUp end={1000000} suffix="+" />
+            <h4 className="text-2xl font-bold tracking-tight text-white mb-2 leading-none">
+              100% Secure
             </h4>
 
             <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">
-              Receipts Generated
+              Data Privacy
             </p>
 
             <p className="text-xs text-slate-400 max-w-[200px] leading-relaxed">
-              Automated PDF bills generated and archived securely.
+              Your financial and student data is encrypted and safe.
             </p>
           </motion.div>
 

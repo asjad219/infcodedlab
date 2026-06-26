@@ -1,16 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2, ShieldCheck, Sparkles, CreditCard, Clock, Star } from "lucide-react";
+import { CheckCircle2, ShieldCheck, Sparkles, CreditCard, Clock, Star, FileCheck2 } from "lucide-react";
 
 export default function SocialProof() {
   const items = [
-    { text: "Trusted by 500+ Coaching Institutes", icon: Star, color: "text-yellow-500" },
+    { text: "Built for Indian Coaching Institutes", icon: Star, color: "text-yellow-500" },
+    { text: "100% Data Privacy & Security", icon: ShieldCheck, color: "text-brand-emerald" },
     { text: "Automated WhatsApp Fee Reminders", icon: Clock, color: "text-brand-indigo" },
-    { text: "Instant Secure PDF Receipts", icon: ShieldCheck, color: "text-brand-emerald" },
+    { text: "Instant Secure PDF Receipts", icon: FileCheck2, color: "text-brand-emerald" },
     { text: "Online UPI & Card Payments", icon: CreditCard, color: "text-brand-cyan" },
     { text: "Attendance Tracker & SMS", icon: CheckCircle2, color: "text-white" },
-    { text: "Secure Biometric Device Sync", icon: Sparkles, color: "text-brand-indigo" },
   ];
 
   // Double the list for infinite looping scroll

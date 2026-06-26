@@ -93,7 +93,7 @@ export default function ScreenshotShowcase() {
             }`}
           >
             <Laptop size={14} />
-            Desktop Ledger
+            Dashboard & Reports
           </button>
 
           <button
@@ -105,7 +105,7 @@ export default function ScreenshotShowcase() {
             }`}
           >
             <Phone size={14} />
-            Mobile App
+            Mobile App & Attendance
           </button>
 
           <button
@@ -117,7 +117,7 @@ export default function ScreenshotShowcase() {
             }`}
           >
             <Layout size={14} />
-            Console Settings
+            Security & Automations
           </button>
         </div>
 
