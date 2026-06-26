@@ -4,7 +4,7 @@ import SocialProof from "@/components/SocialProof";
 import StorytellingScroll from "@/components/StorytellingScroll";
 import BentoGrid from "@/components/BentoGrid";
 import UseCaseSection from "@/components/UseCaseSection";
-import ScreenshotShowcase from "@/components/ScreenshotShowcase";
+import InteractiveShowcase from "@/components/InteractiveShowcase";
 import RoiCalculator from "@/components/RoiCalculator";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
@@ -84,7 +84,7 @@ export default function Home() {
         <HowItWorks />
         <WhoIsItFor />
         <UseCaseSection />
-        <ScreenshotShowcase />
+        <InteractiveShowcase />
         <RoiCalculator />
         <Testimonials />
         <Pricing />
