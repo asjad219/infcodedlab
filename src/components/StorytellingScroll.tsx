@@ -181,22 +181,22 @@ export default function StorytellingScroll() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.12)_0%,transparent_70%)]" />
         
         {/* SVG Pipeline Connection */}
-        <div className="absolute inset-0 z-0 hidden sm:block">
-          <svg className="w-full h-full opacity-60">
+        <div className="absolute inset-0 z-0 w-full h-full pointer-events-none">
+          <svg className="w-full h-full opacity-60" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path
-              d="M 60,110 Q 150,50 240,150"
+              d="M 20,22 Q 60,10 80,50"
               fill="none"
-              stroke="rgba(99, 102, 241, 0.2)"
-              strokeWidth="3"
-              strokeDasharray="4 4"
+              stroke="rgba(99, 102, 241, 0.25)"
+              strokeWidth="0.8"
+              strokeDasharray="2 2"
             />
             <motion.path
-              d="M 60,110 Q 150,50 240,150"
+              d="M 20,22 Q 60,10 80,50"
               fill="none"
               stroke="#06b6d4"
-              strokeWidth="3"
-              strokeDasharray="30 150"
-              animate={{ strokeDashoffset: [-180, 0] }}
+              strokeWidth="1.2"
+              strokeDasharray="8 25"
+              animate={{ strokeDashoffset: [-33, 0] }}
               transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
             />
           </svg>

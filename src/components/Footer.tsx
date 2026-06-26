@@ -51,7 +51,7 @@ export default function Footer() {
             </a>
 
             <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
-              Award-winning fee management system developed by <strong className="text-white">InfCoded Lab</strong>. Helping tuition classes and academies across India automate billing, collect online fees, and drive 99.8% recovery rates.
+              Award-winning fee management system developed by <strong className="text-white">InfCoded Lab</strong> (owned by Asjaduzzaman). Helping tuition classes and academies across India automate billing, collect online fees, and drive 99.8% recovery rates.
             </p>
 
             <button
